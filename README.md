@@ -1,12 +1,59 @@
-# React + Vite
+# UniSwapV2 Pair Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application for exploring Uniswap V2 trading pairs. Built with React, Vite, and Chakra UI.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-  Search any Uniswap V2 pair by contract address
+-  View detailed token information and reserves
+-  Modern, responsive UI
+- Fast data fetching using multicall
+- Secure address validation
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- Chakra UI
+- Ethers.js
+- Uniswap V2 Protocol
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ObiamakaMaria/UniSwapV2_Interaction_Dapp.git
+cd UniSwapV2_Interaction_Dapp
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a `.env` file and add your Infura API key:
+```env
+VITE_INFURA_API_KEY=your_infura_api_key_here
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+5. Open `http://localhost:5173` in your browser
+
+## Usage
+
+1. Enter a Uniswap V2 pair contract address
+2. Click "Fetch Data" to view:
+   - Token details (name, symbol, decimals)
+   - Current reserves
+   - LP token supply
+   - Last update timestamp
+
+
+## License
+
+UnLicensed
+
